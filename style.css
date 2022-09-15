@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #cafdff;
+    padding: 0 16px;
+}
+
+header {
+    background-color: #eadcff;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo {
+    width: 300px;
+}
+
+.subheader {
+    font-size: 16px;
+    margin: 16px 0 24px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+button {
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 24px;
+    background-color: #05c7cf;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+   list-style-type: none;
+   padding-left: 16px; 
+}
+
+h1 { 
+    font-size: 72px;
+}
+
+#about,
+#discord,
+#contact,
+footer {
+    padding: 48px 0;
+}
+
+/*
+
+About
+
+*/
+
+#about {
+    background-color: #faffdc;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img--wrapper {
+  width: 40%; 
+  padding: 0 24px; 
+}
+
+img {
+    width: 100%;
+}
+
+.section__description--wrapper {
+    width: 60%;
+    padding: 0 24px;
+}
+
+.section__description--para {
+    font-size: 20px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.section__description--wrapper,
+.about__img--wrapper {
+    padding: 0 24px;
+}
+
+
+
+
+/*
+
+Discord
+
+*/
+
+#discord {
+    background-color: #cefeff;
+}
+
+/*
+
+Contact
+
+*/
+
+#contact {
+    background-color: #dce9ff;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+input , textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/*
+
+Footer
+
+*/
+
+footer{
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo{
+    max-width: 450px;
+    margin-bottom: 16px;
+}
+
+.footer__links {
+    margin-bottom: 32px;
+}
+
+.footer__link {
+    padding: 0 16px;
+}
+
+/*
+Responsive
+*/
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */ 
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+    header {
+        height: auto;
+    }
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__description--button {
+        max-width: 240px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .subheader {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .section__description--wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .about__img--wrapper {
+        width: 100%;
+    }
+
+    #discord .section__description {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+    .footer__logo {
+        max-width: 360px;
+    }
+
+    .footer__link {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links {
+        margin-bottom: 24px;
+    }
+    
+}
